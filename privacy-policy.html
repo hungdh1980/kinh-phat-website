@@ -3,29 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - HelpMemory</title>
-  <meta name="description" content="Privacy Policy for HelpMemory (com.helpmemory.helpmemory). Location is used only for on-screen SOS when the app is open. No background tracking. Family-safe memory support.">
+  <title>Privacy Policy - Kinh Phật</title>
+  <meta name="description" content="Privacy Policy for Kinh Phật (vn.hieu.kinhphat). A Buddhist sutra listening app. Local playlists, optional ads, no sale of personal practice data.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --teal: #2A7A7B;
-      --teal-deep: #1F5C5E;
-      --ink: #1A2B2C;
-      --muted: #5A6F70;
-      --page: #EEF5F4;
-      --card: #FFFFFF;
-      --line: #D0E2E1;
-      --warm: #F6E3C8;
-      --warm-ink: #6A4E2C;
-      --soft: #E4F1F0;
+      --lotus: #C4785A;
+      --lotus-deep: #9A5438;
+      --ink: #2A241F;
+      --muted: #6B6158;
+      --page: #F3EEE6;
+      --card: #FFFCF8;
+      --line: #E4D9CC;
+      --soft: #EDE4D8;
+      --sage: #5F7A68;
+      --sage-deep: #3F5648;
+      --warm: #F0E4D4;
+      --warm-ink: #6A5340;
+      --ad-bg: #EAE3D8;
+      --ad-ink: #8A7F72;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Nunito', system-ui, sans-serif;
+      font-family: 'Outfit', system-ui, sans-serif;
       background:
-        radial-gradient(ellipse 60% 35% at 100% 0%, rgba(246,227,200,0.4), transparent 50%),
+        radial-gradient(ellipse 55% 30% at 100% 0%, rgba(196,120,90,0.12), transparent 50%),
         var(--page);
       color: var(--ink);
       line-height: 1.8;
@@ -34,62 +38,90 @@
     }
     .container { max-width: 820px; margin: 0 auto; }
     h1 {
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 28px;
-      font-weight: 800;
-      color: var(--teal);
-      line-height: 1.3;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--sage-deep);
+      line-height: 1.25;
       text-align: center;
-      margin: 32px 0 24px;
-      letter-spacing: -0.02em;
+      margin: 28px 0 20px;
+      letter-spacing: -0.01em;
+    }
+    .ad-slot {
+      background:
+        repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 8px,
+          rgba(138,127,114,0.06) 8px,
+          rgba(138,127,114,0.06) 16px
+        ),
+        var(--ad-bg);
+      border: 1px dashed #D2C6B6;
+      border-radius: 12px;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ad-ink);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 18px 0 24px;
     }
     .meta {
-      background: #FFFFFF;
+      background: var(--card);
       border-radius: 14px;
       padding: 18px 22px;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       border: 1px solid var(--line);
       font-size: 14px;
       line-height: 1.7;
     }
     .meta p { margin: 4px 0; }
-    .meta strong { color: var(--teal); }
-    .meta a { color: var(--teal); font-weight: 800; text-decoration: none; word-break: break-all; }
+    .meta strong { color: var(--lotus-deep); }
+    .meta a {
+      color: var(--sage-deep);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-all;
+    }
     .meta a:hover { text-decoration: underline; }
-    .intro { margin-bottom: 28px; color: #374747; }
-    .intro strong { color: #152525; }
+    .intro { margin-bottom: 24px; color: #4A433C; }
+    .intro strong { color: var(--ink); }
     .card {
-      background: #FFFFFF;
-      border-left: 4px solid var(--teal);
+      background: var(--card);
+      border-left: 4px solid var(--sage);
       border-radius: 0 12px 12px 0;
       padding: 22px 24px;
       margin-bottom: 16px;
       border: 1px solid var(--line);
       border-left-width: 4px;
-      box-shadow: 0 2px 10px rgba(26,43,44,0.04);
+      box-shadow: 0 2px 10px rgba(42,36,31,0.04);
     }
     .card h2 {
       font-size: 17px;
-      font-weight: 800;
-      color: var(--teal-deep);
+      font-weight: 700;
+      color: var(--sage-deep);
       margin-bottom: 10px;
       line-height: 1.4;
     }
     .card p {
       font-size: 15px;
-      color: #44403C;
+      color: #524A42;
       margin: 0 0 10px;
     }
     .card p:last-child { margin-bottom: 0; }
     .card ul {
       margin: 8px 0 0 18px;
       font-size: 15px;
-      color: #44403C;
+      color: #524A42;
     }
     .card li { margin-bottom: 6px; }
     .highlight {
       background: var(--warm);
-      border: 1px solid #E8D2AE;
+      border: 1px solid #E0D0BC;
       border-radius: 16px;
       padding: 22px;
       margin: 28px 0;
@@ -107,25 +139,25 @@
       border: 1px solid var(--line);
     }
     .contact-box p { font-size: 15px; }
-    .contact-box a { color: var(--teal); font-weight: 800; text-decoration: none; }
+    .contact-box a { color: var(--sage-deep); font-weight: 700; text-decoration: none; }
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 36px;
       padding-top: 24px;
       border-top: 1px solid var(--line);
-      color: #8A9A9B;
+      color: #9A9086;
       font-size: 13px;
       line-height: 1.7;
     }
     footer a {
-      color: var(--teal);
+      color: var(--sage);
       text-decoration: none;
-      font-weight: 800;
+      font-weight: 700;
       margin: 0 6px;
     }
     footer a:hover { text-decoration: underline; }
     @media (max-width: 480px) {
-      h1 { font-size: 24px; }
+      h1 { font-size: 26px; }
       .card { padding: 18px; }
       body { padding: 16px 12px 36px; }
     }
@@ -133,75 +165,79 @@
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy &amp; Data Security Commitment — HelpMemory</h1>
+    <h1>Privacy Policy — Kinh Phật</h1>
+
+    <!-- Reserved for future ads -->
+    <div class="ad-slot" aria-hidden="true">Advertisement space</div>
 
     <div class="meta">
-      <p><strong>Last updated:</strong> November 10, 2026</p>
-      <p><strong>Package:</strong> com.helpmemory.helpmemory</p>
-      <p><strong>Website:</strong> <a href="https://hungdh1980.github.io/helpmemory-website/" target="_blank" rel="noopener">https://hungdh1980.github.io/helpmemory-website/</a></p>
+      <p><strong>Last updated:</strong> November 11, 2026</p>
+      <p><strong>Package:</strong> vn.hieu.kinhphat</p>
+      <p><strong>Website:</strong> <a href="https://hungdh1980.github.io/kinh-phat-website/" target="_blank" rel="noopener">https://hungdh1980.github.io/kinh-phat-website/</a></p>
       <p><strong>Contact:</strong> <a href="mailto:doanhungttk45@gmail.com">doanhungttk45@gmail.com</a></p>
     </div>
 
     <div class="intro">
-      <p><strong>HelpMemory</strong> is a family caregiving app for older adults with early forgetfulness or mild cognitive decline. We respect your privacy and design location features carefully so they support safety without hidden tracking.</p>
+      <p><strong>Kinh Phật</strong> is a Buddhist sutra listening app. We respect your privacy and keep the product focused on calm practice — playlists, search, and playback — without collecting more than the features need.</p>
     </div>
 
     <div class="card">
-      <h2>1. What HelpMemory is (and is not)</h2>
-      <p>HelpMemory helps families with daily reminders, memory cues, family albums, quick notes, and an on-screen SOS location share when the app is open. It does not provide medical advice, diagnosis, or treatment, and it does not replace emergency services or professional dementia care.</p>
+      <h2>1. What Kinh Phật is</h2>
+      <p>Kinh Phật lets you listen to Buddhist sutras, search tracks, manage a personal playlist, reorder playback, and use repeat or shuffle. It shows track details such as title, album, and artwork, and may notify you when a track finishes.</p>
     </div>
 
     <div class="card">
       <h2>2. Data stored on your device</h2>
-      <p>Reminders, notes, family album content you add, and home-location settings are intended to stay on the device for caregiving use. We do not operate a cloud account system that requires you to create a personal profile to use core features.</p>
+      <p>Playlist choices, playback preferences (such as repeat or shuffle), and related local settings are intended to stay on your device for your own listening use. We do not require a cloud account to use the core listening features.</p>
     </div>
 
     <div class="card">
-      <h2>3. Location &amp; SOS (important)</h2>
-      <p>HelpMemory may request location permission so SOS and home-area safety features can work. To protect privacy and phone safety:</p>
+      <h2>3. No required login for core use</h2>
+      <p>We do not require your name, email, or phone number solely to listen to sutras or manage a local playlist.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Permissions</h2>
+      <p>The app only requests permissions needed for features you use, for example:</p>
       <ul>
-        <li>HelpMemory does <strong>not</strong> run continuous background location tracking.</li>
-        <li>Rescue / SOS sharing is designed to work while the app is open.</li>
-        <li>When the user is farther than about 500 meters from the registered home location and the app is open, an emergency screen may appear.</li>
-        <li>With one tap, the user’s current location can be shared with family contacts you configure and Google Maps can open for guidance home.</li>
-        <li>If the app is closed, rescue features do not operate.</li>
+        <li>Storage / media access for audio files or offline content you choose to use</li>
+        <li>Notifications so you can receive playback-related alerts (such as when a track finishes)</li>
+        <li>Internet access to load content or show ads when those features are enabled</li>
       </ul>
-      <p>We do not sell location data. Location is used for the safety features you choose to use.</p>
+      <p>We do not access unrelated personal files on your device.</p>
     </div>
 
     <div class="card">
-      <h2>4. Photos, media &amp; notes</h2>
-      <p>Family album photos and notes you add are for in-app caregiving support. The app may also open or play nostalgic music, family stories, or YouTube videos you choose. YouTube content remains owned by its uploaders under YouTube’s terms; HelpMemory does not claim ownership of that content.</p>
+      <h2>5. Advertising</h2>
+      <p>The app may show ads so it can remain free. We do not sell your playlist contents or listening history as a personal data product. Ads, if shown, may be provided by Google AdMob and are not based on a spiritual or practice profile that we create about you.</p>
     </div>
 
     <div class="card">
-      <h2>5. No required login for core use</h2>
-      <p>We do not require name, email, or phone signup solely to use the app’s core memory-support tools. Contact details you enter for family SOS sharing are used for those safety features you set up.</p>
+      <h2>6. Analytics &amp; crash reports</h2>
+      <p>If enabled, anonymous or aggregated diagnostics (such as crash reports) may help us improve stability. These tools are not used to sell your identity or practice habits.</p>
     </div>
 
     <div class="card">
-      <h2>6. Advertising</h2>
-      <p>The app may show ads to remain free. We do not sell your personal notes, photos, or location history as a data product. Ads, if shown, may be provided by Google AdMob and are not based on a personal caregiving profile we create about you.</p>
+      <h2>7. Children</h2>
+      <p>Kinh Phật is a general-audience listening app. It is not directed at children under 13.</p>
     </div>
 
     <div class="card">
-      <h2>7. Permissions</h2>
-      <p>The app only requests permissions needed for features you use — such as location for SOS/home-area support, storage/media access for albums or offline content, and related system capabilities. We do not access unrelated personal files on your device.</p>
-    </div>
-
-    <div class="card">
-      <h2>8. Children</h2>
-      <p>HelpMemory is intended for caregivers and older adults. It is not directed at children under 13.</p>
+      <h2>8. Changes to this policy</h2>
+      <p>We may update this Privacy Policy when the app or legal requirements change. The “Last updated” date at the top will reflect the latest version.</p>
     </div>
 
     <div class="card">
       <h2>9. Contact / requests</h2>
-      <p>If you have privacy questions, or believe specific content should be reviewed, contact us by email or through the support channel on the Google Play or App Store listing where you installed HelpMemory. We will review promptly.</p>
+      <p>If you have privacy questions, contact us by email or through the support channel on the Google Play or App Store listing where you installed Kinh Phật. We will review promptly.</p>
     </div>
 
     <div class="highlight">
-      <p><strong>In short:</strong> HelpMemory is built to support families living with early memory loss. Your caregiving notes and album content are meant to stay on your device. Location is for on-app SOS and home-area safety — not hidden background tracking. We do not sell your personal caregiving data.</p>
+      <p><strong>In short:</strong> Kinh Phật is built for peaceful sutra listening. Your playlist and playback preferences are meant to stay on your device. We do not sell your personal listening data. Ads, if shown, help keep the app free.</p>
     </div>
+
+    <!-- Reserved for future ads -->
+    <div class="ad-slot" aria-hidden="true">Advertisement space</div>
 
     <div class="contact-box">
       <p>Questions: <a href="mailto:doanhungttk45@gmail.com">doanhungttk45@gmail.com</a></p>
@@ -214,7 +250,7 @@
         <a href="app-ads.txt">app-ads.txt</a> •
         <a href="mailto:doanhungttk45@gmail.com">Contact</a>
       </p>
-      <p style="margin-top:10px;">© 2026 HelpMemory — Care for early forgetfulness<br>Package com.helpmemory.helpmemory</p>
+      <p style="margin-top:10px;">© 2026 Kinh Phật — Buddhist sutra listening<br>Package vn.hieu.kinhphat</p>
     </footer>
   </div>
 </body>

@@ -3,31 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HelpMemory — Care for early forgetfulness &amp; mild cognitive decline</title>
-  <meta name="description" content="HelpMemory is a family-safe caregiving app for older adults with early forgetfulness or mild cognitive decline. Daily reminders, SOS GPS when the app is open, memory cues, family albums, and quick notes. Package com.helpmemory.helpmemory">
+  <title>Kinh Phật — Listen to Buddhist sutras with a calm, simple playlist</title>
+  <meta name="description" content="Kinh Phật is a peaceful Buddhist sutra listening app with a rich playlist, search, shuffle, and repeat. Package vn.hieu.kinhphat">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --teal: #2A7A7B;
-      --teal-deep: #1F5C5E;
-      --ink: #1A2B2C;
-      --muted: #5A6F70;
-      --page: #EEF5F4;
-      --card: #FFFFFF;
-      --line: #D0E2E1;
-      --warm: #F6E3C8;
-      --warm-ink: #6A4E2C;
-      --soft: #E4F1F0;
+      --lotus: #C4785A;
+      --lotus-deep: #9A5438;
+      --ink: #2A241F;
+      --muted: #6B6158;
+      --page: #F3EEE6;
+      --card: #FFFCF8;
+      --line: #E4D9CC;
+      --soft: #EDE4D8;
+      --sage: #5F7A68;
+      --sage-deep: #3F5648;
+      --ad-bg: #EAE3D8;
+      --ad-ink: #8A7F72;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Nunito', system-ui, sans-serif;
+      font-family: 'Outfit', system-ui, sans-serif;
       background:
-        radial-gradient(ellipse 70% 45% at 0% -5%, rgba(42,122,123,0.14), transparent 55%),
-        radial-gradient(ellipse 55% 40% at 100% 0%, rgba(246,227,200,0.55), transparent 50%),
-        linear-gradient(180deg, #F7FBFA 0%, var(--page) 40%, #E8F2F1 100%);
+        radial-gradient(ellipse 65% 40% at 8% -8%, rgba(196,120,90,0.16), transparent 55%),
+        radial-gradient(ellipse 50% 35% at 100% 5%, rgba(95,122,104,0.14), transparent 50%),
+        linear-gradient(180deg, #F8F4EE 0%, var(--page) 45%, #EBE4DA 100%);
       color: var(--ink);
       line-height: 1.7;
       font-size: 16px;
@@ -36,49 +38,68 @@
     .container { max-width: 820px; margin: 0 auto; }
     header {
       text-align: center;
-      padding: 44px 16px 28px;
+      padding: 48px 16px 20px;
     }
     .brand {
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 42px;
-      font-weight: 800;
-      color: var(--teal);
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 12px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--sage-deep);
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      margin-bottom: 14px;
     }
     .subtitle {
       font-size: 17px;
-      font-weight: 700;
+      font-weight: 500;
       color: var(--muted);
-      max-width: 520px;
+      max-width: 480px;
       margin: 0 auto;
-      line-height: 1.5;
+      line-height: 1.55;
     }
+    .ad-slot {
+      background:
+        repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 8px,
+          rgba(138,127,114,0.06) 8px,
+          rgba(138,127,114,0.06) 16px
+        ),
+        var(--ad-bg);
+      border: 1px dashed #D2C6B6;
+      border-radius: 12px;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ad-ink);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 18px 0;
+    }
+    .ad-slot.banner { min-height: 100px; }
+    .ad-slot.leaderboard { min-height: 90px; }
     .card {
       background: var(--card);
       border-radius: 18px;
       border: 1px solid var(--line);
-      box-shadow: 0 8px 28px rgba(26, 43, 44, 0.06);
+      box-shadow: 0 8px 28px rgba(42, 36, 31, 0.05);
       padding: 28px;
       margin-bottom: 18px;
     }
     .card h2 {
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 22px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 26px;
       font-weight: 700;
-      color: var(--teal-deep);
+      color: var(--sage-deep);
       margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .card h3 {
-      font-size: 16px;
-      font-weight: 800;
-      color: var(--teal);
-      margin: 18px 0 8px;
+      letter-spacing: -0.01em;
     }
     .card p {
-      color: #374747;
+      color: #4A433C;
       margin-bottom: 12px;
     }
     .card p:last-child { margin-bottom: 0; }
@@ -90,36 +111,29 @@
     .feature:first-of-type { padding-top: 4px; }
     .feature strong {
       display: block;
-      color: var(--teal-deep);
+      color: var(--lotus-deep);
       font-size: 15.5px;
+      font-weight: 700;
       margin-bottom: 4px;
     }
     .feature p {
       font-size: 15px;
       margin: 0;
-      color: #4A5B5C;
+      color: #5A524A;
     }
-    .notice {
-      background: var(--soft);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 16px 18px;
-      margin-top: 14px;
-      font-size: 14.5px;
-      color: #355052;
-    }
-    .notice ul {
-      margin: 10px 0 0 18px;
-    }
-    .notice li { margin-bottom: 6px; }
-    .disclaimer {
-      background: var(--warm);
-      border: 1px solid #E8D2AE;
-      border-radius: 14px;
-      padding: 16px 18px;
-      font-size: 14.5px;
-      color: var(--warm-ink);
+    .sutra-list {
+      display: grid;
+      gap: 8px;
       margin-top: 8px;
+    }
+    .sutra-list span {
+      display: block;
+      padding: 10px 14px;
+      background: var(--soft);
+      border-radius: 10px;
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--sage-deep);
     }
     .links {
       display: flex;
@@ -132,25 +146,25 @@
       gap: 8px;
       background: #FFFFFF;
       border: 2px solid var(--line);
-      color: var(--teal);
+      color: var(--sage-deep);
       padding: 10px 18px;
       border-radius: 12px;
       text-decoration: none;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 14px;
       transition: all 0.2s;
     }
     .link-btn:hover {
       background: var(--soft);
-      border-color: var(--teal);
+      border-color: var(--sage);
       transform: translateY(-1px);
     }
     .link-btn.primary {
-      background: var(--teal);
+      background: var(--sage);
       color: white;
-      border-color: var(--teal);
+      border-color: var(--sage);
     }
-    .link-btn.primary:hover { background: var(--teal-deep); }
+    .link-btn.primary:hover { background: var(--sage-deep); }
     .contact-list { list-style: none; }
     .contact-list li {
       padding: 8px 0;
@@ -163,19 +177,24 @@
     .contact-list li:last-child { border-bottom: none; }
     .contact-list strong {
       min-width: 96px;
-      color: var(--teal);
-      font-weight: 800;
+      color: var(--lotus-deep);
+      font-weight: 700;
     }
-    .contact-list a { color: var(--teal); font-weight: 800; text-decoration: none; word-break: break-all; }
+    .contact-list a {
+      color: var(--sage-deep);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-all;
+    }
     .contact-list a:hover { text-decoration: underline; }
     footer {
       text-align: center;
-      padding: 32px 16px 0;
-      color: #8A9A9B;
+      padding: 28px 16px 0;
+      color: #9A9086;
       font-size: 13px;
       line-height: 1.6;
     }
-    footer a { color: var(--teal); text-decoration: none; font-weight: 700; }
+    footer a { color: var(--sage); text-decoration: none; font-weight: 600; }
     footer a:hover { text-decoration: underline; }
     code {
       background: var(--soft);
@@ -184,76 +203,76 @@
       font-size: 0.92em;
     }
     @media (max-width: 480px) {
-      .brand { font-size: 32px; }
+      .brand { font-size: 38px; }
       .card { padding: 22px 18px; }
-      .card h2 { font-size: 19px; }
+      .card h2 { font-size: 22px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1 class="brand">HelpMemory</h1>
-      <p class="subtitle">A calm caregiving companion for early forgetfulness and mild cognitive decline</p>
+      <h1 class="brand">Kinh Phật</h1>
+      <p class="subtitle">A calm Buddhist sutra player with a rich playlist and a simple, peaceful interface</p>
     </header>
 
+    <!-- Reserved for future ads -->
+    <div class="ad-slot leaderboard" aria-hidden="true">Advertisement space</div>
+
     <div class="card">
-      <h2>About HelpMemory</h2>
-      <p><strong>HelpMemory</strong> is an elder-care app for families supporting parents with early forgetfulness or mild cognitive decline. It focuses on everyday routines, dementia-safe support, and emotional connection for households living with memory loss.</p>
-      <p>HelpMemory does <strong>not</strong> provide medical advice, diagnosis, or treatment. It is a memory-support tool that complements professional dementia care.</p>
-      <p>Package: <code>com.helpmemory.helpmemory</code></p>
-      <div class="disclaimer">
-        <strong>Medical disclaimer:</strong> Family setup is required. The app does not replace emergency services or professional care for people living with dementia.
-      </div>
+      <h2>About Kinh Phật</h2>
+      <p><strong>Kinh Phật</strong> helps you listen to familiar Buddhist sutras with a clear playlist, gentle visuals, and controls that stay out of the way. It is designed for daily practice — search quickly, build your own queue, and listen with repeat or shuffle.</p>
+      <p>The app includes well-known works such as the Amitabha Sutra, Ksitigarbha Sutra, Avalokitesvara Sutra, and the Six Roots Repentance ceremony, presented with soft colors that feel quiet and respectful.</p>
+      <p>Package: <code>vn.hieu.kinhphat</code></p>
     </div>
 
     <div class="card">
       <h2>Key features</h2>
 
       <div class="feature">
-        <strong>1. Gentle daily reminders</strong>
-        <p>Set simple routines for older parents: drink water, take a walk, take medicine. A distinctive Capsule 3D interface with oversized typography helps people with mild dementia read clearly and stay more independent — while reducing caregiver stress.</p>
+        <strong>1. Rich sutra library</strong>
+        <p>Listen to familiar Buddhist sutras gathered in one place, with title, album, and artwork shown for each track.</p>
       </div>
 
       <div class="feature">
-        <strong>2. SOS GPS &amp; wandering support</strong>
-        <p>Define a home safety area. If a parent with dementia feels lost or disoriented, one tap on SOS can share a real-time GPS location with family and open Google Maps for guidance home.</p>
-        <div class="notice">
-          <strong>Important — how rescue works:</strong> To protect privacy and phone safety, HelpMemory does <em>not</em> run in the background or track location automatically. Rescue works only when:
-          <ul>
-            <li>HelpMemory is open on the user’s phone</li>
-            <li>The user moves more than 500 meters from the registered home location</li>
-          </ul>
-          When both conditions are met, an emergency screen appears. One tap shares the exact location with family. If the app is closed, rescue features do not work.
-        </div>
+        <strong>2. Fast search</strong>
+        <p>Find the sutra you want quickly so practice can begin without friction.</p>
       </div>
 
       <div class="feature">
-        <strong>3. Memory stimulation</strong>
-        <p>Load nostalgic music, family stories, or YouTube videos to ease anxiety. Gentle cognitive cues help older adults in early Alzheimer stages recall familiar moments and feel calmer.</p>
+        <strong>3. Personal playlist</strong>
+        <p>Add or remove tracks, then reorder the queue so your listening session matches your practice.</p>
       </div>
 
       <div class="feature">
-        <strong>4. Family memory album</strong>
-        <p>Store family photos and gatherings. Familiar images help parents with memory loss feel connected and loved — even when caregivers cannot be present.</p>
+        <strong>4. Repeat &amp; shuffle</strong>
+        <p>Choose repeat or random playback when you want a longer, uninterrupted listening session.</p>
       </div>
 
       <div class="feature">
-        <strong>5. Quick notes for forgetfulness</strong>
-        <p>A simple note tool for daily tasks. Caregivers or older adults can save important details to reduce worry from forgetfulness and support mild cognitive decline.</p>
+        <strong>5. Playback notifications</strong>
+        <p>Get a clear notice when a track finishes, so you always know where you are in the playlist.</p>
       </div>
     </div>
 
+    <!-- Reserved for future ads -->
+    <div class="ad-slot banner" aria-hidden="true">Advertisement space</div>
+
     <div class="card">
-      <h2>For caregivers</h2>
-      <p>HelpMemory is built around one promise: <em>“Even when life is busy, I am still here for you.”</em></p>
-      <p>It helps families stay connected through routines, shared memories, and a clear SOS path — without pretending to be a medical or emergency-response system.</p>
+      <h2>Featured sutras</h2>
+      <p>The library highlights familiar texts many practitioners return to often:</p>
+      <div class="sutra-list">
+        <span>Amitabha Sutra (Kinh A Di Đà)</span>
+        <span>Ksitigarbha Sutra (Kinh Địa Tạng)</span>
+        <span>Avalokitesvara Sutra (Kinh Quan Âm)</span>
+        <span>Six Roots Repentance (Lễ Phật sám hối sáu căn)</span>
+      </div>
     </div>
 
     <div class="card">
       <h2>Links &amp; resources</h2>
       <div class="links">
-        <a class="link-btn primary" href="https://play.google.com/store/apps/details?id=com.helpmemory.helpmemory" target="_blank" rel="noopener">Google Play</a>
+        <a class="link-btn primary" href="https://play.google.com/store/apps/details?id=vn.hieu.kinhphat" target="_blank" rel="noopener">Google Play</a>
         <a class="link-btn" href="privacy-policy.html">Privacy Policy</a>
         <a class="link-btn" href="app-ads.txt">app-ads.txt</a>
         <a class="link-btn" href="#">App Store — Coming Soon</a>
@@ -266,14 +285,17 @@
         <li><strong>Email:</strong> <a href="mailto:doanhungttk45@gmail.com">doanhungttk45@gmail.com</a></li>
         <li><strong>Developer:</strong> Doan Huu Hung</li>
         <li><strong>Location:</strong> Hai Phong, Vietnam</li>
-        <li><strong>Package:</strong> com.helpmemory.helpmemory</li>
-        <li><strong>Website:</strong> <a href="https://hungdh1980.github.io/helpmemory-website/" target="_blank" rel="noopener">hungdh1980.github.io/helpmemory-website</a></li>
+        <li><strong>Package:</strong> vn.hieu.kinhphat</li>
+        <li><strong>Website:</strong> <a href="https://hungdh1980.github.io/kinh-phat-website/" target="_blank" rel="noopener">hungdh1980.github.io/kinh-phat-website</a></li>
       </ul>
     </div>
 
+    <!-- Reserved for future ads -->
+    <div class="ad-slot leaderboard" aria-hidden="true">Advertisement space</div>
+
     <footer>
-      <p>© 2026 HelpMemory — Care for early forgetfulness<br>
-      Package com.helpmemory.helpmemory<br>
+      <p>© 2026 Kinh Phật — Buddhist sutra listening<br>
+      Package vn.hieu.kinhphat<br>
       <a href="privacy-policy.html">Privacy Policy</a> • <a href="app-ads.txt">app-ads.txt</a> • <a href="mailto:doanhungttk45@gmail.com">Contact</a></p>
     </footer>
   </div>
