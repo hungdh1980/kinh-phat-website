@@ -1,6 +1,1 @@
-# app-ads.txt for Kinh Phật - vn.hieu.kinhphat
-# Replace PUB-XXXXXXXXXXXXXXXX with your real AdMob Publisher ID
-# Get it from: AdMob Console -> Apps -> App settings -> Publisher ID
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-# After GitHub Pages is live, this file must be at:
-# https://hungdh1980.github.io/kinh-phat-website/app-ads.txt
+google.com, pub-4753682976066220, DIRECT, f08c47fec0942fa0
